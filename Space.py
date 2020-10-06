@@ -14,10 +14,10 @@ class Space:
         # Fill in this method.
         # Set dState with time derivatives of state .
 
-        dState.EarthPostion = SystemState()
-        dState.EarthVelocity = SystemState()
-        dState.AsteroidPostion = SystemState()
-        dState.AsteroidVelocity = SystemState()
+        dState.EarthPostion = state.EarthPostion
+        dState.EarthVelocity = state.EarthVelocity
+        dState.AsteroidPostion = state.AsteroidPostion
+        dState.AsteroidVelocity = state.AsteroidVelocity
 
     # Decides whether the simulation should terminate
     def shouldHalt(self, t_old, t_new, state_old, state_new):
